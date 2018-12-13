@@ -1,0 +1,3856 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>550</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>IDCS</string>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="interfaceStack">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>511</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="currentIndex">
+     <number>5</number>
+    </property>
+    <widget class="QWidget" name="loginPage">
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>801</width>
+        <height>411</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;INTEGRATED DENTAL CLINIC SYSTEM&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QSplitter" name="splitter">
+           <property name="minimumSize">
+            <size>
+             <width>369</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <widget class="QWidget" name="layoutWidget">
+            <property name="minimumSize">
+             <size>
+              <width>123</width>
+              <height>0</height>
+             </size>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <property name="sizeConstraint">
+              <enum>QLayout::SetFixedSize</enum>
+             </property>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <item>
+                <widget class="QLabel" name="userLabel">
+                 <property name="minimumSize">
+                  <size>
+                   <width>119</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Username&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="userText">
+                 <property name="minimumSize">
+                  <size>
+                   <width>119</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="inputMask">
+                  <string/>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="passLabel">
+                 <property name="minimumSize">
+                  <size>
+                   <width>119</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Password&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="passText">
+                 <property name="minimumSize">
+                  <size>
+                   <width>119</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="echoMode">
+                  <enum>QLineEdit::Password</enum>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout">
+               <item>
+                <spacer name="horizontalSpacer">
+                 <property name="minimumSize">
+                  <size>
+                   <width>16</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QPushButton" name="pushButton">
+                 <property name="minimumSize">
+                  <size>
+                   <width>75</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Submit</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>16</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>158</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="cashierPage">
+     <widget class="QTabWidget" name="cashierTab">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>801</width>
+        <height>511</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Payment Processing</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget_2">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>270</y>
+          <width>181</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="formLayout_5">
+         <item row="0" column="1">
+          <widget class="QLabel" name="cashierTotal">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;0000.00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="cashierAmountPayingLabel">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Payment:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="cashierAmountPaying">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;0000.00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="cashierTotalLabel">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Total:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="cashierAmountLeftToPayLabel">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;Balance:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLabel" name="cashierAmountLeftToPay">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;0000.00&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>440</y>
+          <width>193</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <item>
+          <widget class="QCheckBox" name="cashierFinaliseTransactionCheckBox">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCommandLinkButton" name="cashierFinaliseTransaction">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>Finalise Transaction</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QTableWidget" name="cashierToPayList">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>0</y>
+          <width>611</width>
+          <height>271</height>
+         </rect>
+        </property>
+        <property name="autoScroll">
+         <bool>true</bool>
+        </property>
+        <property name="autoScrollMargin">
+         <number>16</number>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::DoubleClicked</set>
+        </property>
+        <property name="tabKeyNavigation">
+         <bool>false</bool>
+        </property>
+        <property name="showDropIndicator" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="dragDropOverwriteMode">
+         <bool>false</bool>
+        </property>
+        <property name="alternatingRowColors">
+         <bool>false</bool>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::NoSelection</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectItems</enum>
+        </property>
+        <property name="rowCount">
+         <number>0</number>
+        </property>
+        <property name="columnCount">
+         <number>6</number>
+        </property>
+        <attribute name="horizontalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>Doctor ID</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Record Number</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Service</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Treatment Details</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Charge</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Payment</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QSplitter" name="splitter_11">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>181</width>
+          <height>96</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QWidget" name="layoutWidget_6">
+         <layout class="QFormLayout" name="formLayout_4">
+          <item row="0" column="0">
+           <widget class="QLabel" name="cashierWaitingAmountlABEL">
+            <property name="text">
+             <string>Waiting to be served:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="cashierCallNext">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>Call Next</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLCDNumber" name="cashierWaitingAmount">
+            <property name="autoFillBackground">
+             <bool>true</bool>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::WinPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="segmentStyle">
+             <enum>QLCDNumber::Flat</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <layout class="QFormLayout" name="formLayout_7">
+              <item row="0" column="0">
+               <widget class="QLabel" name="cashierFirstNameLabel">
+                <property name="text">
+                 <string>First Name:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLabel" name="cashierFirstName">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="cashierLastNameLabel">
+                <property name="text">
+                 <string>Last Name:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QLabel" name="cashierLastName">
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Previous Payment</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>791</width>
+          <height>481</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_9">
+         <item>
+          <widget class="QSplitter" name="splitter_13">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <widget class="QLineEdit" name="cashierSearchKey">
+            <property name="placeholderText">
+             <string>Insert search value</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="cashierSearchVariable">
+            <property name="currentIndex">
+             <number>-1</number>
+            </property>
+            <item>
+             <property name="text">
+              <string>First Name</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Last Name</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Gender</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>State</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Contact Number</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Poscode</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>List All</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QPushButton" name="cashierSearchByButton">
+            <property name="text">
+             <string>Search</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="cashierEditPatient">
+            <property name="text">
+             <string>Edit</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QStackedWidget" name="cashierPatientInvoiceStack">
+           <property name="currentIndex">
+            <number>1</number>
+           </property>
+           <widget class="QWidget" name="cashierPatientStack">
+            <widget class="QTableView" name="cashierSearchByList">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>791</width>
+               <height>311</height>
+              </rect>
+             </property>
+             <attribute name="verticalHeaderStretchLastSection">
+              <bool>false</bool>
+             </attribute>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="cashierInvoiceStack">
+            <widget class="QTableWidget" name="cashierInvoiceList">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>791</width>
+               <height>311</height>
+              </rect>
+             </property>
+             <property name="columnCount">
+              <number>4</number>
+             </property>
+             <attribute name="horizontalHeaderStretchLastSection">
+              <bool>true</bool>
+             </attribute>
+             <attribute name="verticalHeaderStretchLastSection">
+              <bool>false</bool>
+             </attribute>
+             <column/>
+             <column/>
+             <column/>
+             <column/>
+            </widget>
+            <widget class="QPushButton" name="cashierChangeCashierStack">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>320</y>
+               <width>75</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Back</string>
+             </property>
+            </widget>
+            <widget class="QWidget" name="layoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>670</x>
+               <y>320</y>
+               <width>106</width>
+               <height>58</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_10">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_14">
+                <item>
+                 <widget class="QCheckBox" name="cashierCommitChangeCheckBox">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="cashierCommitChange">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string>Commit Change</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_15">
+                <item>
+                 <widget class="QCheckBox" name="cashierDeleteInvoiceCheckBox">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="cashierDeleteInvoice">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string>Delete Invoice</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="adminPage">
+     <widget class="QTabWidget" name="adminTab">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>801</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="patientEditTab">
+       <attribute name="title">
+        <string>Patient Edit</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>791</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_5">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QPushButton" name="adminEditPatientLoadList">
+               <property name="text">
+                <string>Load</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="adminEditPatientButtonList">
+               <property name="text">
+                <string>Edit</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QTableView" name="adminEditPatientList"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QSplitter" name="splitter_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <widget class="QWidget" name="layoutWidget">
+            <layout class="QGridLayout" name="gridLayout_3">
+             <item row="7" column="0">
+              <widget class="QLabel" name="adminEditPatientPoscodeLabel">
+               <property name="text">
+                <string>Poscode:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2">
+              <widget class="QLabel" name="adminEditPatientLastNameLabel">
+               <property name="text">
+                <string>Last Name:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3">
+              <widget class="QLineEdit" name="adminEditPatientLastName">
+               <property name="inputMethodHints">
+                <set>Qt::ImhUppercaseOnly</set>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QLabel" name="adminEditPatientFirstNameLabel">
+               <property name="text">
+                <string>First Name:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QLabel" name="adminEditPatientGenderLabel">
+               <property name="text">
+                <string>Gender:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QComboBox" name="adminEditPatientGender">
+               <property name="currentIndex">
+                <number>-1</number>
+               </property>
+               <item>
+                <property name="text">
+                 <string>MALE</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>FEMALE</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="6" column="1">
+              <widget class="QLineEdit" name="adminEditPatientAddress">
+               <property name="inputMethodHints">
+                <set>Qt::ImhUppercaseOnly</set>
+               </property>
+               <property name="frame">
+                <bool>true</bool>
+               </property>
+               <property name="clearButtonEnabled">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QLabel" name="adminEditPatientIDLabel">
+               <property name="text">
+                <string>IC/Passport:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="adminEditPatientFirstName">
+               <property name="inputMethodHints">
+                <set>Qt::ImhUppercaseOnly</set>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="3">
+              <widget class="QLineEdit" name="adminEditPatientCNumber">
+               <property name="inputMethodHints">
+                <set>Qt::ImhDigitsOnly</set>
+               </property>
+               <property name="inputMask">
+                <string>999999999999</string>
+               </property>
+               <property name="maxLength">
+                <number>12</number>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="1">
+              <widget class="QLineEdit" name="adminEditPatientID">
+               <property name="inputMethodHints">
+                <set>Qt::ImhUppercaseOnly</set>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="0">
+              <widget class="QLabel" name="adminEditPatientAddressLabel">
+               <property name="text">
+                <string>Address:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="2">
+              <widget class="QLabel" name="adminEditPatientDOBLabel">
+               <property name="text">
+                <string>Date of Birth:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="2">
+              <widget class="QLabel" name="adminEditPatientCNumberLabel">
+               <property name="text">
+                <string>Contact Number:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="3">
+              <widget class="QDateEdit" name="adminEditPatientDOB">
+               <property name="dateTime">
+                <datetime>
+                 <hour>0</hour>
+                 <minute>0</minute>
+                 <second>0</second>
+                 <year>2000</year>
+                 <month>1</month>
+                 <day>1</day>
+                </datetime>
+               </property>
+               <property name="currentSection">
+                <enum>QDateTimeEdit::DaySection</enum>
+               </property>
+               <property name="displayFormat">
+                <string>dd/MM/yyyy</string>
+               </property>
+               <property name="calendarPopup">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="6" column="3">
+              <widget class="QComboBox" name="adminEditPatientState">
+               <property name="currentIndex">
+                <number>-1</number>
+               </property>
+               <item>
+                <property name="text">
+                 <string>JOHOR</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>KEDAH</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>KELANTAN</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>KUALA LUMPUR</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>LABUAN</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>MELAKA</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>NEGERI SEMBILAN</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>PAHANG</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>PULAU PINANG</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>PERAK</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>PERLIS</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>PUTRAJAYA</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>SABAH</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>SARAWAK</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>SELANGOR</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>TERENGGANU</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="6" column="2">
+              <widget class="QLabel" name="adminEditPatientStateLabel">
+               <property name="text">
+                <string>State:</string>
+               </property>
+              </widget>
+             </item>
+             <item row="10" column="1" colspan="3">
+              <widget class="QPushButton" name="adminEditPatientSave">
+               <property name="text">
+                <string>Save</string>
+               </property>
+              </widget>
+             </item>
+             <item row="7" column="1">
+              <widget class="QLineEdit" name="adminEditPatientPoscode">
+               <property name="inputMethodHints">
+                <set>Qt::ImhDigitsOnly</set>
+               </property>
+               <property name="inputMask">
+                <string>99999</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="0">
+              <widget class="QLabel" name="adminEditPatientMedicalNotesLabel">
+               <property name="text">
+                <string>Medical Notes:</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="1">
+              <widget class="QPlainTextEdit" name="adminEditPatientMedicalNotes">
+               <property name="maximumSize">
+                <size>
+                 <width>1000</width>
+                 <height>50</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="staffEditTab">
+       <attribute name="title">
+        <string>Staff Edit</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>791</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <layout class="QFormLayout" name="formLayout">
+           <item row="0" column="0" colspan="2">
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_6">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <item>
+                  <widget class="QPushButton" name="editStaffLoad">
+                   <property name="text">
+                    <string>Load</string>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="editStaffButtonList">
+                   <property name="text">
+                    <string>Edit</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <widget class="QTableView" name="editStaffList"/>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="editStaffFirstNameLabel">
+             <property name="text">
+              <string>First Name:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="editStaffFirstName">
+             <property name="inputMethodHints">
+              <set>Qt::ImhUppercaseOnly</set>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="editStaffLastName">
+             <property name="inputMethodHints">
+              <set>Qt::ImhUppercaseOnly</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="editStaffCNumberLabel">
+             <property name="text">
+              <string>Contact Number:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLineEdit" name="editStaffCNumber">
+             <property name="inputMethodHints">
+              <set>Qt::ImhDigitsOnly</set>
+             </property>
+             <property name="inputMask">
+              <string>999999999999</string>
+             </property>
+             <property name="maxLength">
+              <number>12</number>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="editEmailLabel">
+             <property name="text">
+              <string>Email:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="editEmail"/>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="editUsernameLabel">
+             <property name="text">
+              <string>Username:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLineEdit" name="editUsername"/>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="editPasswordLabel">
+             <property name="text">
+              <string>Password:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QLineEdit" name="editPassword"/>
+           </item>
+           <item row="7" column="0">
+            <widget class="QLabel" name="editPositionLabel">
+             <property name="text">
+              <string>Position:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QComboBox" name="editPosition">
+             <item>
+              <property name="text">
+               <string>ADMIN</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>FINANCE</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>DOCTOR</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>RECEPTIONIST</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>CASHIER</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="9" column="1">
+            <widget class="QPushButton" name="saveStaffEdit">
+             <property name="text">
+              <string>Save</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="editStaffLastNameLabel">
+             <property name="text">
+              <string>Last Name:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0">
+            <widget class="QPushButton" name="editChangeStatus">
+             <property name="text">
+              <string>Change Status</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0">
+            <widget class="QLabel" name="editStatusLabel">
+             <property name="text">
+              <string>Status</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="staffRegistrationTab">
+       <attribute name="title">
+        <string>Staff Registration</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>791</width>
+          <height>461</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="registerStaffFirstName">
+           <property name="inputMethodHints">
+            <set>Qt::ImhUppercaseOnly</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="registerStaffLastNameLabel">
+           <property name="text">
+            <string>Last Name:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="registerStaffLastName">
+           <property name="inputMethodHints">
+            <set>Qt::ImhUppercaseOnly</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="registerStaffCNumberLabel">
+           <property name="text">
+            <string>Contact Number:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="registerStaffFirstNameLabel">
+           <property name="text">
+            <string>First Name:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="registerStaffCNumber">
+           <property name="inputMethodHints">
+            <set>Qt::ImhDigitsOnly</set>
+           </property>
+           <property name="inputMask">
+            <string>999999999999</string>
+           </property>
+           <property name="maxLength">
+            <number>12</number>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="registerUsernameLabel">
+           <property name="text">
+            <string>Username:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="registerUsername"/>
+         </item>
+         <item row="7" column="1">
+          <widget class="QPushButton" name="registerStaffSave">
+           <property name="text">
+            <string>Save</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="registerPasswordLabel">
+           <property name="text">
+            <string>Password:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QComboBox" name="registerPosition">
+           <item>
+            <property name="text">
+             <string>ADMIN</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>FINANCE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>DOCTOR</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RECEPTIONIST</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CASHIER</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="registerPositionLabel">
+           <property name="text">
+            <string>Position:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="registerPassword"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="registerStaffEmailLabel">
+           <property name="text">
+            <string>Email:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="registerStaffEmail"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Records</string>
+       </attribute>
+       <widget class="QSplitter" name="splitter_4">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>791</width>
+          <height>217</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <widget class="QSplitter" name="splitter_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QLineEdit" name="adminSearchRecord">
+          <property name="placeholderText">
+           <string>Insert Patient IC/Passport</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="adminSearchRecordButton">
+          <property name="text">
+           <string>View Records</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <layout class="QFormLayout" name="formLayout_2">
+          <item row="0" column="0">
+           <widget class="QLabel" name="adminEecordsLabel">
+            <property name="text">
+             <string>Records:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QTableView" name="adminRecordsList">
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_7">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>220</y>
+          <width>791</width>
+          <height>251</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="2" column="0" colspan="3">
+          <widget class="QLabel" name="adminWorkingAreaEditLabel">
+           <property name="text">
+            <string>Working area:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="3">
+          <widget class="QComboBox" name="adminDoctorNameEdit"/>
+         </item>
+         <item row="6" column="0" colspan="3">
+          <widget class="QLabel" name="adminDoctorNameEditLabel">
+           <property name="text">
+            <string>Doctor Name:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="adminPatientNameEdit">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="3">
+          <widget class="QLabel" name="adminPatientNameEditLabel">
+           <property name="text">
+            <string>Patient name:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QPushButton" name="adminEditRecord">
+           <property name="text">
+            <string>Update</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLineEdit" name="adminWorkingAreaEdit"/>
+         </item>
+         <item row="4" column="3">
+          <widget class="QPlainTextEdit" name="adminTreatmentDetailsEdit"/>
+         </item>
+         <item row="5" column="3">
+          <widget class="QLineEdit" name="adminChargeEdit">
+           <property name="inputMask">
+            <string>999999</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0" colspan="3">
+          <widget class="QLabel" name="adminChargeEditLabel">
+           <property name="text">
+            <string>Charge:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0" colspan="3">
+          <widget class="QLabel" name="adminServiceEditLabel">
+           <property name="text">
+            <string>Service:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0" colspan="3">
+          <widget class="QLabel" name="adminTreatmentDetailsEditLabel">
+           <property name="text">
+            <string>Treatment Details:</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QComboBox" name="adminServiceEdit">
+           <property name="currentText">
+            <string/>
+           </property>
+           <property name="currentIndex">
+            <number>-1</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>C/UP</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>COPAIN</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SP</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>XLA</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>FN</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>MED</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RCT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>RCF</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>DISC-ORTHO</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>XLA-ORTHO</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ORTHOFITTING</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ORTHO</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>PD1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>PD2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>PD3</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>PD4</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>REPAIR PD</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>ADJ PD</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>MOS</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>STO</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CB1</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>CB2</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>IMPLANT</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>OTHERS</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>REVIEW</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLabel" name="adminRecordIDEdit">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="3">
+          <widget class="QLabel" name="adminRecordIDEditLabel">
+           <property name="text">
+            <string>Record ID:</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Invoices</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget_8">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>10</y>
+          <width>791</width>
+          <height>481</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_11">
+         <item>
+          <widget class="QSplitter" name="splitter_14">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <widget class="QLineEdit" name="adminInvoiceSearchKey">
+            <property name="placeholderText">
+             <string>Insert search value</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="adminInvoiceSearchVariable">
+            <property name="currentIndex">
+             <number>-1</number>
+            </property>
+            <item>
+             <property name="text">
+              <string>First Name</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Last Name</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Gender</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>State</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Contact Number</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Poscode</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>List All</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QPushButton" name="adminInvoiceSearchByButton">
+            <property name="text">
+             <string>Search</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="adminInvoiceEditPatient">
+            <property name="text">
+             <string>Edit</string>
+            </property>
+           </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QStackedWidget" name="adminInvoicePatientStack">
+           <property name="currentIndex">
+            <number>1</number>
+           </property>
+           <widget class="QWidget" name="adminInvoicePatientStack_2">
+            <widget class="QTableView" name="adminInvoiceSearchByList">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>791</width>
+               <height>311</height>
+              </rect>
+             </property>
+             <attribute name="verticalHeaderStretchLastSection">
+              <bool>false</bool>
+             </attribute>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="adminInvoiceInvoiceStack">
+            <widget class="QTableWidget" name="adminInvoiceList">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>791</width>
+               <height>311</height>
+              </rect>
+             </property>
+             <property name="columnCount">
+              <number>4</number>
+             </property>
+             <attribute name="horizontalHeaderStretchLastSection">
+              <bool>true</bool>
+             </attribute>
+             <attribute name="verticalHeaderStretchLastSection">
+              <bool>false</bool>
+             </attribute>
+             <column/>
+             <column/>
+             <column/>
+             <column/>
+            </widget>
+            <widget class="QPushButton" name="adminInvoiceChangeStack">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>320</y>
+               <width>75</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>Back</string>
+             </property>
+            </widget>
+            <widget class="QWidget" name="layoutWidget_9">
+             <property name="geometry">
+              <rect>
+               <x>670</x>
+               <y>320</y>
+               <width>106</width>
+               <height>58</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_12">
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_16">
+                <item>
+                 <widget class="QCheckBox" name="adminInvoiceCommitChangeCheckBox">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="adminInvoiceCommitChange">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string>Commit Change</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_17">
+                <item>
+                 <widget class="QCheckBox" name="adminInvoiceDeleteInvoiceCheckBox">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="adminInvoiceDeleteInvoice">
+                  <property name="enabled">
+                   <bool>false</bool>
+                  </property>
+                  <property name="text">
+                   <string>Delete Invoice</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="doctorPage">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>801</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_7">
+       <attribute name="title">
+        <string>Treatment</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget_23">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>10</y>
+          <width>193</width>
+          <height>42</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_19">
+         <item>
+          <widget class="QCheckBox" name="doctorSendForPaymentCheckBox">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCommandLinkButton" name="commandLinkButton">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>Send for payment</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_24">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>340</y>
+          <width>791</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_13">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_20">
+           <item>
+            <widget class="QLabel" name="doctorRecordLabel">
+             <property name="text">
+              <string>Records:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="doctorChangeStack">
+             <property name="text">
+              <string>View current record</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QStackedWidget" name="doctorRecordStackWidget">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="currentIndex">
+            <number>1</number>
+           </property>
+           <widget class="QWidget" name="doctorRecordStack_2">
+            <widget class="QTableView" name="doctorRecordList">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>791</width>
+               <height>101</height>
+              </rect>
+             </property>
+            </widget>
+           </widget>
+           <widget class="QWidget" name="doctorCurrentRecordStack">
+            <widget class="QTableWidget" name="doctorCurrentRecordList">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>791</width>
+               <height>101</height>
+              </rect>
+             </property>
+             <property name="columnCount">
+              <number>4</number>
+             </property>
+             <column>
+              <property name="text">
+               <string>Working Area</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Treatment Details</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Service</string>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Charge</string>
+              </property>
+             </column>
+            </widget>
+            <widget class="QWidget" name="layoutWidget_25">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>100</y>
+               <width>96</width>
+               <height>25</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_21">
+              <item>
+               <widget class="QPushButton" name="doctorRemoveCurrentRecordRow">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string>Remove</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="doctorRemoveRowCheckBox">
+                <property name="enabled">
+                 <bool>false</bool>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_26">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>100</y>
+          <width>791</width>
+          <height>241</height>
+         </rect>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_22">
+         <item>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="4" column="0">
+            <widget class="QPushButton" name="doctorAddRecord">
+             <property name="text">
+              <string>Add</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLineEdit" name="doctorWorkingArea"/>
+           </item>
+           <item row="3" column="3">
+            <widget class="QLineEdit" name="doctorCharge">
+             <property name="inputMask">
+              <string>999999</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="3">
+            <widget class="QLabel" name="doctorWorkingAreaLabel">
+             <property name="text">
+              <string>Working area:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="3">
+            <widget class="QLabel" name="doctorChargeLabel">
+             <property name="text">
+              <string>Charge:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="3">
+            <widget class="QLabel" name="doctorTreatmentDetailsLabel">
+             <property name="text">
+              <string>Treatment Details:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="3">
+            <widget class="QLabel" name="doctorServiceLabel">
+             <property name="text">
+              <string>Service:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QComboBox" name="doctorService">
+             <property name="currentText">
+              <string/>
+             </property>
+             <property name="currentIndex">
+              <number>-1</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>C/UP</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>COPAIN</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>SP</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>XLA</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>FN</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>MED</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>RCT</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>RCF</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>DISC-ORTHO</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>XLA-ORTHO</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>ORTHOFITTING</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>ORTHO</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>PD1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>PD2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>PD3</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>PD4</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>REPAIR PD</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>ADJ PD</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>MOS</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>STO</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>CB1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>CB2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>IMPLANT</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>OTHERS</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>REVIEW</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QPlainTextEdit" name="doctorTreatmentDetails"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_23">
+           <item>
+            <widget class="QLabel" name="doctorMedicalNotesLabel">
+             <property name="text">
+              <string>Medical Notes:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPlainTextEdit" name="doctorMedicalNotes">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QSplitter" name="splitter_15">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>216</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QWidget" name="layoutWidget_27">
+         <layout class="QFormLayout" name="formLayout_11">
+          <item row="0" column="0">
+           <widget class="QLabel" name="doctorwaitingLabel">
+            <property name="text">
+             <string>Waiting to be served:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QPushButton" name="doctorCallNext">
+            <property name="enabled">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>Call Next</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLCDNumber" name="doctorWaitingAmount">
+            <property name="autoFillBackground">
+             <bool>true</bool>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::WinPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Plain</enum>
+            </property>
+            <property name="lineWidth">
+             <number>0</number>
+            </property>
+            <property name="midLineWidth">
+             <number>0</number>
+            </property>
+            <property name="segmentStyle">
+             <enum>QLCDNumber::Flat</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <layout class="QFormLayout" name="formLayout_12">
+            <item row="0" column="1">
+             <widget class="QLabel" name="doctorFirstName">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="doctorLastNameLabel">
+              <property name="text">
+               <string>Last Name:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QLabel" name="doctorLastName">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="doctorFirstNameLabel">
+              <property name="text">
+               <string>First Name:</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_8">
+       <attribute name="title">
+        <string>Previous Treatments</string>
+       </attribute>
+       <widget class="QSplitter" name="splitter_16">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>789</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QLineEdit" name="doctorSearchKey">
+         <property name="placeholderText">
+          <string>Insert search value</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="doctorSearchVariable">
+         <property name="currentIndex">
+          <number>-1</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>First Name</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Last Name</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Gender</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>State</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Contact Number</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Poscode</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>List All</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QPushButton" name="doctorSearchByButton">
+         <property name="text">
+          <string>Search</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="doctorEditPatient">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Edit</string>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QStackedWidget" name="doctorPatientRecordStack">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>29</y>
+          <width>789</width>
+          <height>450</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="doctorPatientStack">
+         <widget class="QTableView" name="doctorSearchByList">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>791</width>
+            <height>441</height>
+           </rect>
+          </property>
+          <attribute name="verticalHeaderStretchLastSection">
+           <bool>false</bool>
+          </attribute>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="doctorRecordStack">
+         <widget class="QTableView" name="doctorRecordsList">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>791</width>
+            <height>191</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QWidget" name="layoutWidget_29">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>190</y>
+            <width>791</width>
+            <height>251</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="2" column="0" colspan="3">
+            <widget class="QLabel" name="doctorWorkingAreaEditLabel">
+             <property name="text">
+              <string>Working area:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="3">
+            <widget class="QComboBox" name="doctorDoctorNameEdit"/>
+           </item>
+           <item row="6" column="0" colspan="3">
+            <widget class="QLabel" name="doctorDoctorNameEditLabel">
+             <property name="text">
+              <string>Doctor Name:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLabel" name="doctorPatientNameEdit">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0" colspan="3">
+            <widget class="QLabel" name="doctorPatientNameEditLabel">
+             <property name="text">
+              <string>Patient name:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QLineEdit" name="doctorWorkingAreaEdit"/>
+           </item>
+           <item row="4" column="3">
+            <widget class="QPlainTextEdit" name="doctorTreatmentDetailsEdit"/>
+           </item>
+           <item row="5" column="3">
+            <widget class="QLineEdit" name="doctorChargeEdit">
+             <property name="inputMask">
+              <string>999999</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="0" colspan="3">
+            <widget class="QLabel" name="doctorChargeEditLabel">
+             <property name="text">
+              <string>Charge:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="3">
+            <widget class="QLabel" name="doctorServiceEditLabel">
+             <property name="text">
+              <string>Service:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0" colspan="3">
+            <widget class="QLabel" name="doctorTreatmentDetailsEditLabel">
+             <property name="text">
+              <string>Treatment Details:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3">
+            <widget class="QComboBox" name="doctorServiceEdit">
+             <property name="currentText">
+              <string/>
+             </property>
+             <property name="currentIndex">
+              <number>-1</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>C/UP</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>COPAIN</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>SP</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>XLA</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>FN</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>MED</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>RCT</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>RCF</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>DISC-ORTHO</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>XLA-ORTHO</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>ORTHOFITTING</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>ORTHO</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>PD1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>PD2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>PD3</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>PD4</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>REPAIR PD</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>ADJ PD</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>MOS</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>STO</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>CB1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>CB2</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>IMPLANT</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>OTHERS</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>REVIEW</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QLabel" name="doctorRecordIDEdit">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="3">
+            <widget class="QLabel" name="doctorRecordIDEditLabel">
+             <property name="text">
+              <string>Record ID:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="1">
+            <widget class="QPushButton" name="doctorChangeDoctorStack">
+             <property name="text">
+              <string>Back</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="2">
+            <widget class="QPushButton" name="doctorEditRecord">
+             <property name="text">
+              <string>Update</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="receptionistPage">
+     <widget class="QTabWidget" name="receptionistTab">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>801</width>
+        <height>501</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="registerIn">
+       <attribute name="title">
+        <string>Patient Lookup</string>
+       </attribute>
+       <widget class="QStackedWidget" name="receptionistStack">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>159</y>
+          <width>791</width>
+          <height>311</height>
+         </rect>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <widget class="QWidget" name="search">
+         <widget class="QSplitter" name="splitter_6">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>30</y>
+            <width>791</width>
+            <height>281</height>
+           </rect>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <widget class="QSplitter" name="splitter_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <widget class="QLineEdit" name="receptionistSearchKey">
+            <property name="placeholderText">
+             <string>Insert search value</string>
+            </property>
+           </widget>
+           <widget class="QComboBox" name="receptionistSearchVariable">
+            <property name="currentIndex">
+             <number>-1</number>
+            </property>
+            <item>
+             <property name="text">
+              <string>First Name</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Last Name</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Gender</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>State</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Contact Number</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Poscode</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>List All</string>
+             </property>
+            </item>
+           </widget>
+           <widget class="QPushButton" name="receptionistSearchByButton">
+            <property name="text">
+             <string>Search</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="receptionistEditPatient">
+            <property name="text">
+             <string>Edit</string>
+            </property>
+           </widget>
+          </widget>
+          <widget class="QTableView" name="receptionistSearchByList"/>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="edit">
+         <widget class="QWidget" name="formLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>791</width>
+            <height>311</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="2" column="2">
+            <widget class="QLabel" name="receptionistEditDOBLabel">
+             <property name="text">
+              <string>Date of Birth:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLineEdit" name="receptionistEditLastName"/>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="receptionistEditGenderLabel">
+             <property name="text">
+              <string>Gender:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="1">
+            <widget class="QLineEdit" name="receptionistEditPoscode">
+             <property name="inputMask">
+              <string>00000</string>
+             </property>
+             <property name="placeholderText">
+              <string/>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="3">
+            <widget class="QLineEdit" name="receptionistEditContactNumber">
+             <property name="inputMask">
+              <string>0000000000000</string>
+             </property>
+             <property name="maxLength">
+              <number>13</number>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="2">
+            <widget class="QLabel" name="receptionistEditContactNumberLabel">
+             <property name="text">
+              <string>Contact Number:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="receptionistEditIDLabel">
+             <property name="text">
+              <string>IC/Passport:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="3">
+            <widget class="QComboBox" name="receptionistEditState">
+             <property name="currentIndex">
+              <number>-1</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>JOHOR</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>KEDAH</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>KELANTAN</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>KUALA LUMPUR</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>LABUAN</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>MELAKA</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>NEGERI SEMBILAN</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>PAHANG</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>PULAU PINANG</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>PERAK</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>PERLIS</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>PUTRAJAYA</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>SABAH</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>SARAWAK</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>SELANGOR</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>TERENGGANU</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>OTHERS</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QDateEdit" name="receptionistEditDOB">
+             <property name="dateTime">
+              <datetime>
+               <hour>0</hour>
+               <minute>0</minute>
+               <second>0</second>
+               <year>2000</year>
+               <month>1</month>
+               <day>1</day>
+              </datetime>
+             </property>
+             <property name="currentSection">
+              <enum>QDateTimeEdit::DaySection</enum>
+             </property>
+             <property name="displayFormat">
+              <string>dd/MM/yyyy</string>
+             </property>
+             <property name="calendarPopup">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="2">
+            <widget class="QLabel" name="receptionistEditStateLabel">
+             <property name="text">
+              <string>State:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="8" column="0">
+            <widget class="QLabel" name="receptionistEditPoscodeLabel">
+             <property name="text">
+              <string>Poscode:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="receptionistEditAddressLabel">
+             <property name="text">
+              <string>Address:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="receptionistEditFirstName"/>
+           </item>
+           <item row="6" column="1">
+            <widget class="QLineEdit" name="receptionistEditAddress">
+             <property name="frame">
+              <bool>true</bool>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="receptionistEditFirstNameLabel">
+             <property name="text">
+              <string>First Name:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="receptionistEditID"/>
+           </item>
+           <item row="2" column="1">
+            <widget class="QComboBox" name="receptionistEditGender">
+             <property name="currentIndex">
+              <number>-1</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>MALE</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>FEMALE</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="receptionistEditLastNameLabel">
+             <property name="text">
+              <string>Last Name:</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="0">
+            <widget class="QPushButton" name="receptionistBack">
+             <property name="text">
+              <string>Back</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="1" colspan="3">
+            <widget class="QPushButton" name="receptionistEditSave">
+             <property name="text">
+              <string>Save</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="1">
+            <widget class="QPlainTextEdit" name="receptionistEditMedicalNotes"/>
+           </item>
+           <item row="9" column="0">
+            <widget class="QLabel" name="receptionistEditMedicalNotesLabel">
+             <property name="text">
+              <string>Medical Notes:</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QSplitter" name="splitter_12">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>216</width>
+          <height>180</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QWidget" name="layoutWidget_3">
+         <layout class="QFormLayout" name="searchContainer">
+          <item row="0" column="0">
+           <widget class="QLineEdit" name="receptionistSearchInput">
+            <property name="placeholderText">
+             <string>Insert Patient IC/Passport</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QPushButton" name="receptionistSearchButton">
+            <property name="text">
+             <string>Search</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="receptionistFirstNameLabel">
+            <property name="text">
+             <string>First Name:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="receptionistFirstName">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="receptionistLastNameLabel">
+            <property name="text">
+             <string>Last Name:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QLabel" name="receptionistLastName">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0" colspan="2">
+           <layout class="QHBoxLayout" name="horizontalLayout_18">
+            <item>
+             <widget class="QComboBox" name="receptionistQueueOption">
+              <property name="currentIndex">
+               <number>-1</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>Doctor</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Cashier</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="receptionistEnqueue">
+              <property name="text">
+               <string>Register Into Queue</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="4" column="0" colspan="2">
+           <layout class="QHBoxLayout" name="horizontalLayout_5"/>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="receptionistWaitingAmountServeLabel">
+            <property name="text">
+             <string>Current patient to serve:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QSplitter" name="splitter_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <widget class="QLCDNumber" name="receptionistWaitingAmountServe">
+             <property name="cursor">
+              <cursorShape>ArrowCursor</cursorShape>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::WinPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="smallDecimalPoint">
+              <bool>false</bool>
+             </property>
+             <property name="mode">
+              <enum>QLCDNumber::Dec</enum>
+             </property>
+             <property name="segmentStyle">
+              <enum>QLCDNumber::Flat</enum>
+             </property>
+             <property name="intValue" stdset="0">
+              <number>0</number>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="receptionistWaitingAmountPayLabel">
+            <property name="text">
+             <string>Current patient to pay:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QSplitter" name="splitter_8">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <widget class="QLCDNumber" name="receptionistWaitingAmountPay">
+             <property name="cursor">
+              <cursorShape>ArrowCursor</cursorShape>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::WinPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+             </property>
+             <property name="smallDecimalPoint">
+              <bool>false</bool>
+             </property>
+             <property name="mode">
+              <enum>QLCDNumber::Dec</enum>
+             </property>
+             <property name="segmentStyle">
+              <enum>QLCDNumber::Flat</enum>
+             </property>
+             <property name="intValue" stdset="0">
+              <number>0</number>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item row="5" column="0" colspan="2">
+           <widget class="QSplitter" name="splitter_10">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <widget class="QLabel" name="receptionistFirstNameLabel_2">
+             <property name="text">
+              <string>Doctor:</string>
+             </property>
+            </widget>
+            <widget class="QComboBox" name="receptionistDoctorOption">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="newRegistration">
+       <attribute name="title">
+        <string>New Patient Registration</string>
+       </attribute>
+       <widget class="QWidget" name="formLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>791</width>
+          <height>471</height>
+         </rect>
+        </property>
+        <layout class="QFormLayout" name="nRegistrationContainer">
+         <item row="0" column="0">
+          <widget class="QLabel" name="receptionistfNameLabel">
+           <property name="text">
+            <string>First Name*:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="receptionistfName"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="receptionistlNameLabel">
+           <property name="text">
+            <string>Last Name*:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="receptionistlName"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="receptionistgenderLabel">
+           <property name="text">
+            <string>Gender*:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QComboBox" name="receptionistgender">
+           <property name="currentIndex">
+            <number>-1</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>MALE</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>FEMALE</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="receptionistdobLabel">
+           <property name="text">
+            <string>Date of Birth*:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QDateEdit" name="receptionistdob">
+           <property name="currentSection">
+            <enum>QDateTimeEdit::DaySection</enum>
+           </property>
+           <property name="displayFormat">
+            <string>dd/MM/yyyy</string>
+           </property>
+           <property name="calendarPopup">
+            <bool>true</bool>
+           </property>
+           <property name="currentSectionIndex">
+            <number>0</number>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="receptionistidLabel">
+           <property name="text">
+            <string>IC/Passport*:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="receptionistid"/>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="receptionistcNumber">
+           <property name="inputMask">
+            <string>0000000000000</string>
+           </property>
+           <property name="maxLength">
+            <number>13</number>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="receptionistAddressLabel">
+           <property name="text">
+            <string>Address:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLineEdit" name="receptionistAddress">
+           <property name="frame">
+            <bool>true</bool>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="receptioniststateLabel">
+           <property name="text">
+            <string>State:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QComboBox" name="receptioniststate">
+           <property name="currentIndex">
+            <number>-1</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>JOHOR</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>KEDAH</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>KELANTAN</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>KUALA LUMPUR</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>LABUAN</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>MELAKA</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>NEGERI SEMBILAN</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>PAHANG</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>PULAU PINANG</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>PERAK</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>PERLIS</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>PUTRAJAYA</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SABAH</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SARAWAK</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>SELANGOR</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>TERENGGANU</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>OTHERS</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="receptionistposcodeLabel">
+           <property name="text">
+            <string>Poscode:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QLineEdit" name="receptionistposcode">
+           <property name="inputMask">
+            <string>00000</string>
+           </property>
+           <property name="placeholderText">
+            <string/>
+           </property>
+           <property name="clearButtonEnabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QLabel" name="receptionistmedicalNotesLabel">
+           <property name="text">
+            <string>Medical Notes:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="QPlainTextEdit" name="receptionistmedicalNotes"/>
+         </item>
+         <item row="10" column="1">
+          <widget class="QPushButton" name="receptionistAddNewPatient">
+           <property name="text">
+            <string>Register</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="receptionistcNumberLabel">
+           <property name="text">
+            <string>Contact Number*:</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="financePage">
+     <widget class="QPushButton" name="financeGenerateChart">
+      <property name="geometry">
+       <rect>
+        <x>680</x>
+        <y>470</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Generate Report</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="financeReportTable">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>761</width>
+        <height>401</height>
+       </rect>
+      </property>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>11</x>
+        <y>10</y>
+        <width>761</width>
+        <height>43</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_13">
+       <item>
+        <layout class="QFormLayout" name="formLayout_9">
+         <item row="0" column="0">
+          <widget class="QLabel" name="financeChartGenerateTypeLabel">
+           <property name="text">
+            <string>Report:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="QComboBox" name="financeChartGenerateType">
+           <property name="currentIndex">
+            <number>-1</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>Patient Registration Count Report</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Total Earning Report</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Individual Doctor Earning Report</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Patient Count Report</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout_8">
+         <item row="0" column="0">
+          <widget class="QLabel" name="financeTypeLabel">
+           <property name="text">
+            <string>Type:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QComboBox" name="financeChartGenerateChoice1">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="currentIndex">
+            <number>-1</number>
+           </property>
+           <item>
+            <property name="text">
+             <string>Daily</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Monthly</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Yearly</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QComboBox" name="financeChartGenerateChoice2">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QFormLayout" name="formLayout_10">
+         <item row="0" column="0">
+          <widget class="QLabel" name="financeStartDateLabel">
+           <property name="text">
+            <string>Start date:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="financeEndDateLabel">
+           <property name="text">
+            <string>End date:</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QDateEdit" name="financeStartDate">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="currentSection">
+            <enum>QDateTimeEdit::MonthSection</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QDateEdit" name="financeEndDate">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <zorder>financeGenerateChart</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder>financeReportTable</zorder>
+    </widget>
+   </widget>
+   <widget class="QSplitter" name="splitter_9">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>0</width>
+      <height>0</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionLogout"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLogout">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>receptionistSearchButton</tabstop>
+  <tabstop>receptionistSearchKey</tabstop>
+  <tabstop>receptionistSearchVariable</tabstop>
+  <tabstop>receptionistSearchByButton</tabstop>
+  <tabstop>receptionistEditPatient</tabstop>
+  <tabstop>receptionistSearchByList</tabstop>
+  <tabstop>receptionistEditFirstName</tabstop>
+  <tabstop>receptionistEditLastName</tabstop>
+  <tabstop>receptionistEditGender</tabstop>
+  <tabstop>receptionistEditDOB</tabstop>
+  <tabstop>receptionistEditID</tabstop>
+  <tabstop>receptionistEditContactNumber</tabstop>
+  <tabstop>receptionistEditAddress</tabstop>
+  <tabstop>receptionistEditState</tabstop>
+  <tabstop>receptionistEditPoscode</tabstop>
+  <tabstop>receptionistEditMedicalNotes</tabstop>
+  <tabstop>receptionistBack</tabstop>
+  <tabstop>receptionistEditSave</tabstop>
+  <tabstop>receptionistfName</tabstop>
+  <tabstop>receptionistlName</tabstop>
+  <tabstop>receptionistgender</tabstop>
+  <tabstop>receptionistdob</tabstop>
+  <tabstop>receptionistid</tabstop>
+  <tabstop>receptionistcNumber</tabstop>
+  <tabstop>receptionistAddress</tabstop>
+  <tabstop>receptioniststate</tabstop>
+  <tabstop>receptionistposcode</tabstop>
+  <tabstop>receptionistmedicalNotes</tabstop>
+  <tabstop>receptionistAddNewPatient</tabstop>
+  <tabstop>userText</tabstop>
+  <tabstop>passText</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>receptionistSearchInput</tabstop>
+  <tabstop>adminTab</tabstop>
+  <tabstop>adminEditPatientLoadList</tabstop>
+  <tabstop>adminEditPatientButtonList</tabstop>
+  <tabstop>adminEditPatientList</tabstop>
+  <tabstop>adminEditPatientFirstName</tabstop>
+  <tabstop>adminEditPatientLastName</tabstop>
+  <tabstop>adminEditPatientGender</tabstop>
+  <tabstop>adminEditPatientDOB</tabstop>
+  <tabstop>adminEditPatientID</tabstop>
+  <tabstop>adminEditPatientCNumber</tabstop>
+  <tabstop>adminEditPatientAddress</tabstop>
+  <tabstop>adminEditPatientState</tabstop>
+  <tabstop>adminEditPatientSave</tabstop>
+  <tabstop>editStaffLoad</tabstop>
+  <tabstop>editStaffButtonList</tabstop>
+  <tabstop>editStaffList</tabstop>
+  <tabstop>editStaffFirstName</tabstop>
+  <tabstop>editStaffLastName</tabstop>
+  <tabstop>editStaffCNumber</tabstop>
+  <tabstop>editEmail</tabstop>
+  <tabstop>editUsername</tabstop>
+  <tabstop>editPassword</tabstop>
+  <tabstop>editPosition</tabstop>
+  <tabstop>saveStaffEdit</tabstop>
+  <tabstop>receptionistTab</tabstop>
+  <tabstop>registerStaffFirstName</tabstop>
+  <tabstop>registerStaffLastName</tabstop>
+  <tabstop>registerStaffCNumber</tabstop>
+  <tabstop>registerStaffEmail</tabstop>
+  <tabstop>registerUsername</tabstop>
+  <tabstop>registerPassword</tabstop>
+  <tabstop>registerPosition</tabstop>
+  <tabstop>registerStaffSave</tabstop>
+  <tabstop>adminSearchRecord</tabstop>
+  <tabstop>adminSearchRecordButton</tabstop>
+  <tabstop>adminRecordsList</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
